@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Weather Agent - Wajid Javed</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/project-details.css">
+    <link rel="stylesheet" href="../css/mediaqueries.css">
+    <link rel="icon" href="../assets/images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+    
+    <header>
+        <nav id="nav">
+            <div class="header">
+                <div class="logo" data-aos="fade-right" data-aos-duration="1000">
+                    <a href="../index.html">
+                        <img src="../assets/images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <ul class="nav-links" data-aos="fade-left" data-aos-duration="1000">
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#proficiencies">Proficiencies</a></li>
+                    <li><a href="../index.html#projects">Projects</a></li>
+                    <li><a href="../index.html#other-platforms">Other Platforms</a></li>
+                    <li><a href="../index.html#certifications">Certifications</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                    <li>
+                        <div class="dark-mode-container">
+                            <i class="fas fa-sun"></i>
+                            <div class="theme-switch-wrapper">
+                                <label class="theme-switch" for="checkbox">
+                                    <input type="checkbox" id="checkbox" />
+                                    <div class="slider round"></div>
+                                </label>
+                            </div>
+                            <i class="fas fa-moon"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="header">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../assets/images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="hamburger-menu">
+                    <div class="hamburger-icon" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="menu-links">
+                        <li><a href="../index.html#about" onclick="toggleMenu()">About</a></li>
+                        <li><a href="../index.html#proficiencies" onclick="toggleMenu()">Proficiencies</a></li>
+                        <li><a href="../index.html#projects" onclick="toggleMenu()">Projects</a></li>
+                        <li><a href="../index.html#other-platforms" onclick="toggleMenu()">Other Platforms</a></li>
+                        <li><a href="../index.html#certifications" onclick="toggleMenu()">Certifications</a></li>
+                        <li><a href="../index.html#contact" onclick="toggleMenu()">Contact</a></li>
+                        <li>
+                            <div class="dark-mode-container-mobile">
+                                <i class="fas fa-sun"></i>
+                                <label class="theme-switch" for="checkbox-mobile">
+                                    <input type="checkbox" id="checkbox-mobile" />
+                                    <div class="slider round"></div>
+                                </label>
+                                <i class="fas fa-moon"></i>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="project-container">
+            <!-- Back to projects button -->
+            <a href="../index.html#projects" class="back-link">
+                <i class="fas fa-arrow-left"></i> Back to All Projects
+            </a>
+
+            <!-- Project Header -->
+            <div class="project-header" data-aos="fade-up">
+                <h1 class="project-title">AI Weather Agent</h1>
+                <p class="project-description">
+                    This project demonstrates an AI-powered agent capable of fetching and reporting real-time weather conditions and daily forecasts for locations worldwide.
+                    Users interact with the agent through a simple chat interface provided by Chainlit. When a user specifies a city,
+                    the agent utilizes a tool connected to a real-world weather API to retrieve the latest data and presents it back to the user.
+                </p>
+                
+                <!-- Technology stack with badges -->
+                <div class="tech-stack">
+                    <span class="tech-badge"><img src="../assets/images/python.png" alt="Python"> Python</span>
+                    <span class="tech-badge"><img src="../assets/images/openai.png" alt="OpenAI"> OpenAI Agents SDK</span>
+                    <span class="tech-badge"><img src="../assets/images/chainlit.png" alt="Chainlit"> Chainlit</span>
+                    <!-- You might need to add a badge for the specific weather API used -->
+                </div>
+                
+                <!-- Project links -->
+                <div class="links-section">
+                    <a href="#" class="project-link" target="_blank">
+                        <i class="fas fa-globe"></i> Live Demo
+                    </a>
+                    <a href="#" class="project-link" target="_blank">
+                        <i class="fab fa-github"></i> Source Code
+                    </a>
+                    <!-- Removed Research Paper link -->
+                </div>
+            </div>
+
+            <!-- Interactive Demo Section -->
+            <section class="demo-section" data-aos="fade-up">
+                <h2 class="demo-heading">Live Demo / How to Use</h2>
+                <iframe class="demo-frame" src="https://your-project-demo-url.com" title="Project Demo" allowfullscreen></iframe>
+                <div class="demo-instructions">
+                    <p><strong>How to use:</strong> Interact with the Chainlit chat interface embedded above (or linked). 
+                    Simply type the name of a city (e.g., "What's the weather like in London?") and press Enter. 
+                    The agent will process your request, use its tool to fetch the weather data, and respond with the current conditions and forecast.</p>
+                </div>
+            </section>
+
+            <!-- Documentation Section -->
+            <section class="documentation-section" data-aos="fade-up">
+                <h2 class="section-heading">Project Documentation</h2>
+                <div class="documentation-content">
+                    <h3>Overview</h3>
+                    <p>
+                        The AI Weather Agent is built using Python and leverages the OpenAI Agents SDK to create an intelligent agent capable of understanding user requests and utilizing external tools. 
+                        The core functionality revolves around fetching weather data. A Chainlit front-end provides a user-friendly chat interface for interaction. 
+                        The agent is designed to be extensible, potentially incorporating more tools or features in the future.
+                    </p>
+
+                    <h3>Features</h3>
+                    <ul>
+                        <li><strong>Natural Language Interaction:</strong> Users can ask for weather information in a conversational manner via the Chainlit interface.</li>
+                        <li><strong>Real-time Weather Data:</strong> Utilizes a tool connected to a live weather API to provide current conditions.</li>
+                        <li><strong>Daily Forecasts:</strong> Capable of retrieving and displaying daily weather forecasts for the requested location.</li>
+                        <li><strong>Global Coverage:</strong> Can fetch weather data for cities around the world, dependent on the underlying weather API's coverage.</li>
+                    </ul>
+
+                    <!-- Technical Details Section Removed -->
+
+                    <!-- Implementation Process Section Removed -->
+                </div>
+            </section>
+
+            <!-- Challenges and Solutions Section Removed -->
+
+            <!-- Future Improvements Section -->
+            <section class="documentation-section" data-aos="fade-up">
+                <h2 class="section-heading">Future Improvements</h2>
+                <div class="documentation-content">
+                    <p>
+                        Discuss potential future improvements and extensions for your project. What features would you like to add?
+                        How could you enhance the existing functionality? This shows that you're thinking about the long-term evolution of your project.
+                    </p>
+                    <ul>
+                        <li>Add support for multi-day or hourly forecasts.</li>
+                        <li>Implement severe weather alerts.</li>
+                        <li>Allow comparing weather between multiple locations.</li>
+                        <li>Integrate location detection based on user IP.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Related Projects Section Removed -->
+        </div>
+    </main>
+
+    <footer>
+        <p>Build with &#9829; by Wajid Javed.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            mirror: false
+        });
+
+        // Dark mode toggle functionality specific to project pages
+        const toggleSwitch = document.querySelector('#checkbox');
+        const toggleSwitchMobile = document.querySelector('#checkbox-mobile');
+
+        if (toggleSwitch && toggleSwitchMobile) {
+            function switchTheme(e) {
+                const isDark = e.target.checked;
+                if (isDark) {
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                    localStorage.setItem('theme', 'dark');
+                } else {
+                    document.documentElement.setAttribute('data-theme', 'light');
+                    localStorage.setItem('theme', 'light');
+                }
+
+                if (e.target === toggleSwitch) {
+                    toggleSwitchMobile.checked = isDark;
+                } else {
+                    toggleSwitch.checked = isDark;
+                }
+                setTimeout(() => { AOS.refresh(); }, 300);
+            }
+
+            toggleSwitch.addEventListener('change', switchTheme);
+            toggleSwitchMobile.addEventListener('change', switchTheme);
+
+            const currentTheme = localStorage.getItem('theme');
+            if (currentTheme) {
+                document.documentElement.setAttribute('data-theme', currentTheme);
+                const isDarkMode = currentTheme === 'dark';
+                toggleSwitch.checked = isDarkMode;
+                toggleSwitchMobile.checked = isDarkMode;
+            }
+        }
+    </script>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html> 

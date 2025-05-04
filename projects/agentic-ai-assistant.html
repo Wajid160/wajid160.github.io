@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Agent AI Assistant - Wajid Javed</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/project-details.css">
+    <link rel="stylesheet" href="../css/mediaqueries.css">
+    <link rel="icon" href="../assets/images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+    
+    <header>
+        <nav id="nav">
+            <div class="header">
+                <div class="logo" data-aos="fade-right" data-aos-duration="1000">
+                    <a href="../index.html">
+                        <img src="../assets/images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <ul class="nav-links" data-aos="fade-left" data-aos-duration="1000">
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#proficiencies">Proficiencies</a></li>
+                    <li><a href="../index.html#projects">Projects</a></li>
+                    <li><a href="../index.html#other-platforms">Other Platforms</a></li>
+                    <li><a href="../index.html#certifications">Certifications</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                    <li>
+                        <div class="dark-mode-container">
+                            <i class="fas fa-sun"></i>
+                            <div class="theme-switch-wrapper">
+                                <label class="theme-switch" for="checkbox">
+                                    <input type="checkbox" id="checkbox" />
+                                    <div class="slider round"></div>
+                                </label>
+                            </div>
+                            <i class="fas fa-moon"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="header">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../assets/images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="hamburger-menu">
+                    <div class="hamburger-icon" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="menu-links">
+                        <li><a href="../index.html#about" onclick="toggleMenu()">About</a></li>
+                        <li><a href="../index.html#proficiencies" onclick="toggleMenu()">Proficiencies</a></li>
+                        <li><a href="../index.html#projects" onclick="toggleMenu()">Projects</a></li>
+                        <li><a href="../index.html#other-platforms" onclick="toggleMenu()">Other Platforms</a></li>
+                        <li><a href="../index.html#certifications" onclick="toggleMenu()">Certifications</a></li>
+                        <li><a href="../index.html#contact" onclick="toggleMenu()">Contact</a></li>
+                        <li>
+                            <div class="dark-mode-container-mobile">
+                                <i class="fas fa-sun"></i>
+                                <label class="theme-switch" for="checkbox-mobile">
+                                    <input type="checkbox" id="checkbox-mobile" />
+                                    <div class="slider round"></div>
+                                </label>
+                                <i class="fas fa-moon"></i>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="project-container">
+            <!-- Back to projects button -->
+            <a href="../index.html#projects" class="back-link">
+                <i class="fas fa-arrow-left"></i> Back to All Projects
+            </a>
+
+            <!-- Project Header -->
+            <div class="project-header" data-aos="fade-up">
+                <h1 class="project-title">Multi-Agent AI Assistant</h1>
+                <p class="project-description">
+                    An advanced multi-agent AI system built using OpenAI's Assistants API and Chainlit. This project demonstrates how multiple specialized AI agents can collaborate to solve complex tasks that would be challenging for a single agent. The system features a coordinator agent that delegates subtasks to specialized agents, enabling more efficient and accurate problem-solving.
+                </p>
+                
+                <!-- Technology stack with badges -->
+                <div class="tech-stack">
+                    <span class="tech-badge"><img src="../assets/images/python.png" alt="Python"> Python</span>
+                    <span class="tech-badge"><img src="../assets/images/openai.png" alt="OpenAI"> OpenAI API</span>
+                    <span class="tech-badge"><img src="../assets/images/chainlit.png" alt="Chainlit"> Chainlit</span>
+                    <span class="tech-badge"><img src="../assets/images/langchain.png" alt="LangChain"> LangChain</span>
+                    <span class="tech-badge"><img src="../assets/images/fastapi.png" alt="FastAPI"> FastAPI</span>
+                </div>
+                
+                <!-- Project links -->
+                <div class="links-section">
+                    <a href="https://multi-agent-assistant-demo.com" class="project-link" target="_blank">
+                        <i class="fas fa-globe"></i> Live Demo
+                    </a>
+                    <a href="https://github.com/wajid-javed/multi-agent-assistant" class="project-link" target="_blank">
+                        <i class="fab fa-github"></i> Source Code
+                    </a>
+                </div>
+            </div>
+
+            <!-- Interactive Demo Section -->
+            <section class="demo-section" data-aos="fade-up">
+                <h2 class="demo-heading">Live Demo</h2>
+                <iframe class="demo-frame" src="https://multi-agent-assistant-demo.com" title="Project Demo" allowfullscreen></iframe>
+                <div class="demo-instructions">
+                    <p><strong>How to use:</strong> Type your question or request in the chat box at the bottom of the interface. The system will analyze your query and assign it to appropriate specialized agents. You can see all agent communications in real-time as they work together to solve your task. Try asking complex questions that would benefit from multiple areas of expertise, such as: "Research recent advancements in renewable energy and create a business plan for a solar panel installation company."</p>
+                </div>
+            </section>
+
+            <!-- Documentation Section -->
+            <section class="documentation-section" data-aos="fade-up">
+                <h2 class="section-heading">Project Documentation</h2>
+                <div class="documentation-content">
+                    <h3>Overview</h3>
+                    <p>
+                        The Multi-Agent AI Assistant is an advanced cognitive system that uses a team of specialized AI agents to collaboratively solve complex problems. Unlike traditional single-agent systems, this architecture mimics human team dynamics by distributing tasks among specialized agents with different capabilities.
+                    </p>
+                    <p>
+                        The system is built on the concept of agentic AI, where each agent has a specific role, expertise, and capabilities. These agents can communicate with each other, share information, and coordinate their efforts to achieve a common goal.
+                    </p>
+
+                    <h3>Architecture</h3>
+                    <p>The system consists of the following components:</p>
+                    <ul>
+                        <li><strong>Coordinator Agent:</strong> Acts as the team leader, analyzing user requests, breaking them down into subtasks, assigning them to specialized agents, and synthesizing the final response.</li>
+                        <li><strong>Research Agent:</strong> Specializes in finding, analyzing, and summarizing information from various sources.</li>
+                        <li><strong>Creative Agent:</strong> Focuses on generating creative content, brainstorming ideas, and thinking outside the box.</li>
+                        <li><strong>Analytical Agent:</strong> Excels in data analysis, critical thinking, and logical reasoning.</li>
+                        <li><strong>Planning Agent:</strong> Creates structured plans, timelines, and actionable steps.</li>
+                        <li><strong>Memory System:</strong> Stores conversation history and agent interactions for context awareness.</li>
+                        <li><strong>User Interface:</strong> Chainlit-powered chat interface that shows all agent interactions transparently.</li>
+                    </ul>
+
+                    <h3>Features</h3>
+                    <ul>
+                        <li><strong>Task Decomposition:</strong> Breaks complex problems into manageable subtasks.</li>
+                        <li><strong>Dynamic Agent Selection:</strong> Assigns tasks to the most appropriate agents based on expertise.</li>
+                        <li><strong>Inter-agent Communication:</strong> Agents can share information and request help from each other.</li>
+                        <li><strong>Parallel Processing:</strong> Multiple agents can work simultaneously on different aspects of a problem.</li>
+                        <li><strong>Transparent Workflow:</strong> Users can see how agents collaborate and reason through problems.</li>
+                        <li><strong>Progressive Reasoning:</strong> The system builds solutions incrementally, refining its approach with each step.</li>
+                    </ul>
+
+                    <h3>Technical Details</h3>
+                    <p>
+                        The system is built using OpenAI's Assistants API, which provides the foundation for creating specialized AI agents with different instructions, tools, and capabilities. Each agent is an instance of an OpenAI Assistant with specific configurations.
+                    </p>
+                    <pre><code># Example code for creating a specialized agent
+from openai import OpenAI
+from typing import List, Dict, Any
+
+client = OpenAI()
+
+def create_specialized_agent(name: str, instructions: str, tools: List[Dict[str, Any]]):
+    """Create a specialized agent with specific instructions and tools."""
+    return client.beta.assistants.create(
+        name=name,
+        instructions=instructions,
+        model="gpt-4-turbo",
+        tools=tools
+    )</code></pre>
+                    <p>
+                        The coordinator agent uses a specialized prompt engineering technique to effectively decompose tasks and synthesize information from multiple agents:
+                    </p>
+                    <pre><code># Coordinator agent task delegation
+coordinator_instructions = """
+You are the coordinator of a multi-agent AI system. Your role is to:
+1. Analyze user requests and break them down into subtasks
+2. Assign each subtask to the most appropriate specialized agent
+3. Collect and synthesize information from all agents
+4. Present a comprehensive final response to the user
+
+Available agents:
+- Research Agent: Finding, analyzing and summarizing information
+- Creative Agent: Generating creative content and ideas
+- Analytical Agent: Data analysis and logical reasoning
+- Planning Agent: Creating structured plans and timelines
+
+Always think step by step. For complex queries, create a plan before delegating tasks.
+"""</code></pre>
+
+                    <h3>Implementation Process</h3>
+                    <p>
+                        The implementation followed these key steps:
+                    </p>
+                    <ol>
+                        <li>Researching multi-agent architectures and identifying the optimal structure</li>
+                        <li>Defining the responsibilities and capabilities of each specialized agent</li>
+                        <li>Building the coordination system for task delegation and information synthesis</li>
+                        <li>Developing the communication protocols between agents</li>
+                        <li>Creating the Chainlit user interface for transparent interaction</li>
+                        <li>Implementing the memory system for context awareness</li>
+                        <li>Extensive testing and refinement of the agent interactions</li>
+                    </ol>
+                </div>
+            </section>
+
+            <!-- Challenges and Solutions Section -->
+            <section class="challenges-section" data-aos="fade-up">
+                <h2 class="section-heading">Challenges & Solutions</h2>
+                
+                <div class="challenge-item">
+                    <h3 class="challenge-title">
+                        <i class="fas fa-exclamation-triangle"></i> Agent Coordination
+                    </h3>
+                    <p class="challenge-description">
+                        One of the biggest challenges was ensuring effective coordination between multiple agents without creating bottlenecks or circular dependencies. Initial implementations suffered from agents waiting for each other or duplicating work.
+                    </p>
+                    <div class="solution">
+                        <p class="solution-title">Solution:</p>
+                        <p>
+                            I implemented a hierarchical coordination system with the Coordinator Agent at the top. This agent maintains a task queue and dependency graph, ensuring that tasks are executed in the optimal order. I also developed a message-passing protocol that allows agents to share intermediate results, reducing redundant work. Finally, I implemented a timeout mechanism to prevent deadlocks when an agent is taking too long to respond.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="challenge-item">
+                    <h3 class="challenge-title">
+                        <i class="fas fa-exclamation-triangle"></i> Context Management
+                    </h3>
+                    <p class="challenge-description">
+                        Another significant challenge was maintaining context across multiple agents while keeping token usage reasonable. Early versions either lost important context or became too expensive due to repeatedly sending the entire conversation history.
+                    </p>
+                    <div class="solution">
+                        <p class="solution-title">Solution:</p>
+                        <p>
+                            I developed a specialized memory system that maintains three levels of context: global (shared by all agents), agent-specific (relevant only to individual agents), and task-specific (relevant to particular subtasks). This system uses summarization techniques to condense information while preserving key details. The system also implements dynamic context pruning, which removes irrelevant information based on the current task focus.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="challenge-item">
+                    <h3 class="challenge-title">
+                        <i class="fas fa-exclamation-triangle"></i> Response Latency
+                    </h3>
+                    <p class="challenge-description">
+                        With multiple agents working sequentially, the system initially had high latency, making it frustrating for users waiting for responses to complex queries.
+                    </p>
+                    <div class="solution">
+                        <p class="solution-title">Solution:</p>
+                        <p>
+                            I restructured the system to use asynchronous processing and parallel agent execution whenever possible. This included implementing Python's asyncio library and creating a task scheduler that identifies independent subtasks that can be executed simultaneously. I also added a streaming response feature that shows intermediate results to users while other agents are still working, providing a more interactive experience.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Future Improvements Section -->
+            <section class="documentation-section" data-aos="fade-up">
+                <h2 class="section-heading">Future Improvements</h2>
+                <div class="documentation-content">
+                    <p>
+                        While the current implementation demonstrates the power of multi-agent collaboration, there are several exciting directions for future development:
+                    </p>
+                    <ul>
+                        <li><strong>Dynamic Agent Creation:</strong> Implement a system that can dynamically create new specialized agents based on the specific requirements of a task.</li>
+                        <li><strong>Improved Learning Mechanisms:</strong> Develop mechanisms for agents to learn from past interactions and improve their performance over time.</li>
+                        <li><strong>Advanced Tool Integration:</strong> Expand the system's capabilities by integrating more specialized tools for tasks like data visualization, code execution, and external API access.</li>
+                        <li><strong>Multi-modal Support:</strong> Enhance the system to handle image and audio inputs/outputs in addition to text.</li>
+                        <li><strong>User Preference Learning:</strong> Implement a system that learns user preferences and adjusts agent behavior accordingly.</li>
+                        <li><strong>Edge Deployment:</strong> Optimize the system for deployment on edge devices with limited computational resources.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Related Projects Section -->
+            <section class="related-projects" data-aos="fade-up">
+                <h2 class="related-heading">Related Projects</h2>
+                <div class="related-cards">
+                    <a href="ai-research-agent.html" class="related-card">
+                        <img src="../assets/research-agent.jpg" alt="AI Research Agent" class="related-img">
+                        <div class="related-info">
+                            <h3 class="related-title">AI Research Agent</h3>
+                            <p class="related-description">An autonomous agent that can conduct comprehensive research on any topic using web search and data analysis.</p>
+                        </div>
+                    </a>
+                    <a href="email-spam-classifier.html" class="related-card">
+                        <img src="../assets/email.PNG" alt="Email Spam Classifier" class="related-img">
+                        <div class="related-info">
+                            <h3 class="related-title">Email Spam Classifier</h3>
+                            <p class="related-description">An ML model that identifies spam emails using NLP techniques and machine learning algorithms.</p>
+                        </div>
+                    </a>
+                    <a href="image-classifier.html" class="related-card">
+                        <img src="../assets/image.PNG" alt="Image Classifier" class="related-img">
+                        <div class="related-info">
+                            <h3 class="related-title">Image Classifier</h3>
+                            <p class="related-description">A deep learning model that can classify images into various categories with high accuracy.</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright &#169; 2024 Wajid Javed. All Rights Reserved.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 1000,
+                once: false,
+                mirror: true
+            });
+        });
+    </script>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html> 

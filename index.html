@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wajid Javed</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <!-- AOS CSS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/mediaqueries.css">
+        <!-- TODO: Update logo to match Agentic AI focus - consider using an AI-themed logo or a custom monogram with tech elements -->
+        <link rel="icon" href="./assets/images/logo.png" type="image/x-icon">
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+        (function(){
+            emailjs.init("W8KK0-Rh9tWIw9Fik");
+        })();
+        </script>
+    </head>    
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+    
+    <header>
+        <nav id="nav">
+            <div class="header">
+                <div class="logo" data-aos="fade-right" data-aos-duration="1000">
+                    <img src="./assets/images/logo.png" alt="logo">
+                </div>
+                <ul class="nav-links" data-aos="fade-left" data-aos-duration="1000">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#proficiencies">Proficiencies</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#other-platforms">Other Platforms</a></li>
+                    <!-- <li><a href="#certifications">Certifications</a></li> -->
+                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <div class="dark-mode-container">
+                            <i class="fas fa-sun"></i>
+                            <div class="theme-switch-wrapper">
+                                <label class="theme-switch" for="checkbox">
+                                    <input type="checkbox" id="checkbox" />
+                                    <div class="slider round"></div>
+                                </label>
+                            </div>
+                            <i class="fas fa-moon"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="header">
+                <div class="logo">
+                    <img src="./assets/images/logo.png" alt="emon logo">
+                </div>
+                <div class="hamburger-menu">
+                    <div class="hamburger-icon" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="menu-links">
+                        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                        <li><a href="#proficiencies" onclick="toggleMenu()">Proficiencies</a></li>
+                        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                        <li><a href="#other-platforms" onclick="toggleMenu()">Other Platforms</a></li>
+                        <!-- <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li> -->
+                        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                        <li>
+                            <div class="dark-mode-container-mobile">
+                                <i class="fas fa-sun"></i>
+                                <label class="theme-switch" for="checkbox-mobile">
+                                    <input type="checkbox" id="checkbox-mobile" />
+                                    <div class="slider round"></div>
+                                </label>
+                                <i class="fas fa-moon"></i>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="profile">
+            <div class="section_pic_container" data-aos="zoom-in" data-aos-duration="1200">
+                <img src="./assets/images/wajid-profile.jpg" alt="Profile Picture" />
+            </div>
+            <div class="section_text" data-aos="fade-up" data-aos-duration="1000">
+                <p class="section_text_p1">Hello, I'm</p>
+                <h1 class="title_1">Wajid Javed</h1>
+                <p id="rotating-text" class="section_text_p2"></p>
+                <div class="btn_container">
+                    <button class="btn_color btn-hover-effect" onclick="location.href='./#contact'">
+                        Contact Info
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section id="about" data-aos="fade-up" data-aos-duration="1000">
+            <p class="section_text_p1">Get To Know More</p>
+            <h1 class="title_2">About Me</h1>
+            <div class="text_container">
+                <p>I'm focused on pushing the boundaries of what AI can achieve. My recent work centers on agentic AI—developing systems that operate autonomously and make independent decisions—alongside advanced generative AI techniques and multi-agent systems. I thrive on solving complex challenges and transforming innovative ideas into practical, real-world solutions. Driven by curiosity and a commitment to progress, I constantly seek new challenges that inspire creative thinking and technical excellence.</p>
+                <p>In addition, I have built prototypes of Customer Support Task Scheduling and Data Retrieval Agents using publicly available data. These projects replicate key functionalities found in operational business systems, demonstrating my ability to reverse-engineer real-world scenarios and develop solutions that mirror industry standards.</p>
+                <p>Together, my work reflects a blend of technical rigor, innovation, and an unwavering dedication to advancing AI technology.</p>
+            </div>
+        </section>
+        <section id="proficiencies" data-aos="fade-up" data-aos-duration="1000">
+            <p class="section_text_p1">Here Are My</p>
+            <h1 class="title_2">Proficiencies</h1>
+            <div class="article_container">
+                <article data-aos="flip-left" data-aos-delay="100" data-aos-duration="800">
+                    <img src="./assets/images/data-analysis.png" alt="Data Analysis Icon" class="icon"/>
+                    <div>
+                        <h3>Agentic AI Systems</h3>
+                        <p> I design and develop autonomous AI systems that can make independent decisions and interact within multi-agent environments.</p>
+                    </div>
+                </article>
+                <article data-aos="flip-left" data-aos-delay="200" data-aos-duration="800">
+                    <img src="./assets/images/ai.png" alt="Data Analytics Icon" class="icon"/>
+                    <div>
+                        <h3>AI & ML</h3>
+                        <p>I have hands-on experience in applying both classical machine learning and deep learning techniques to solve real-world problems.</p>
+                    </div>
+                </article>
+                <article data-aos="flip-left" data-aos-delay="400" data-aos-duration="800">
+                    <img src="./assets/images/front-end-web-development.png" alt="Front End Web Development Icon" class="icon"/>
+                    <div>
+                        <h3>Data-Driven Prototyping</h3>
+                        <p> I build practical prototypes—such as Customer Support Task Scheduling and Data Retrieval Agents—by leveraging publicly available data to replicate and understand industry-standard systems.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="projects" style="text-decoration: none;" data-aos="fade-up" data-aos-duration="1000">
+            <p class="section_text_p1">Browse Through My</p>
+            <h1 class="title_2">Projects</h1>
+            <div class="separator mb-5"></div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="card h-100 p_card">
+                        <a href="projects/weather-agent.html">
+                            <img src="./assets/images/weather-agent.png" class="card-img-top" style="height:9rem" alt="Weather Agent Project">
+                            <div class="card-body">Weather Agent</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="card h-100 p_card">
+                        <a href="projects/ai-research-agent.html">
+                            <img src="./assets/images/research-agent.jpeg" class="card-img-top" style="height:9rem" alt="...">
+                            <div class="card-body">AI Research Agent</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="other-platforms" data-aos="fade-up" data-aos-duration="1000">
+            <p class="section_text_p1">Explore My</p>
+            <h1 class="title_2">Other Platforms</h1>
+            <div class="platform-container">
+                <a href="https://github.com/Wajid160" class="platform-card" target="_blank" data-aos="fade-up" data-aos-delay="100">
+                    <div class="platform-icon">
+                        <img src="./assets/images/github.jpg" alt="Github" />
+                    </div>
+                    <div class="platform-info">
+                        <h3>GitHub</h3>
+                        <p>All my code repositories and projects</p>
+                    </div>
+                    <div class="platform-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/wajid-javed160/" class="platform-card" target="_blank" data-aos="fade-up" data-aos-delay="200">
+                    <div class="platform-icon">
+                        <img src="./assets/images/linkedin.png" alt="Medium" />
+                    </div>
+                    <div class="platform-info">
+                        <h3>LinkedIn</h3>
+                        <p>Thoughts and insights on Agentic AI</p>
+                    </div>
+                    <div class="platform-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
+                <a href="https://www.kaggle.com/wajid420" class="platform-card" target="_blank" data-aos="fade-up" data-aos-delay="300">
+                    <div class="platform-icon">
+                        <img src="./assets/images/keggle.png" alt="Kaggle" />
+                    </div>
+                    <div class="platform-info">
+                        <h3>Kaggle</h3>
+                        <p>Data science competitions and datasets</p>
+                    </div>
+                    <div class="platform-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
+            </div>
+        </section>
+            <section id="contact" data-aos="fade-up" data-aos-duration="1000">
+            <h1 class="title_2">Contact Me</h1>
+            <div class="contact-container">
+                <!-- <div class="contact-card">
+                    <form class="contact-form" onsubmit="return sendMail();">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                </div> -->
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <div class="info-item">
+                        <i class="fas fa-user"></i>
+                        <p>Wajid Javed</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=wajidjaved160@gmail.com" class="social-link" target="_blank">
+                            <img src="./assets/images/gm.png" alt="Email Icon"/>
+                            <span>Gmail</span>
+                        </a>
+                        
+                        <a href="https://www.linkedin.com/in/wajid-javed160/" class="social-link" target="_blank">
+                            <img src="./assets/images/linkedin.png" alt="LinkedIn Icon"/>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://wa.me/923471362616" class="social-link" target="_blank">
+                            <img src="./assets/images/wapp.PNG" alt="WhatsApp Icon"/>
+                            <span>WhatsApp</span>
+                        </a>
+                        <a href="https://web.facebook.com/wajidjaved160" class="social-link" target="_blank">
+                            <img src="./assets/images/fb.png" alt="Facebook Icon"/>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="https://x.com/wajidjaved160" class="social-link" target="_blank">
+                            <img src="./assets/images/x.png" alt="Instagram Icon"/>
+                            <span>X</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>Build with &#9829; by Wajid Javed.</p>
+        </footer>
+    </main>
+    <script src="js/script.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: false,
+            mirror: true
+        });
+        
+        // Dark mode toggle functionality
+        const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+        
+        function switchTheme(e) {
+            if (e.target.checked) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'light');
+                localStorage.setItem('theme', 'light');
+            }    
+        }
+        
+        toggleSwitch.addEventListener('change', switchTheme, false);
+        
+        // Check for saved user preference
+        const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+        
+        if (currentTheme) {
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            
+            if (currentTheme === 'dark') {
+                toggleSwitch.checked = true;
+            }
+        }
+    </script>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

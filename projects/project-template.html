@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Name - Wajid Javed</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/project-details.css">
+    <link rel="stylesheet" href="../css/mediaqueries.css">
+    <link rel="icon" href="../assets/images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+    
+    <header>
+        <nav id="nav">
+            <div class="header">
+                <div class="logo" data-aos="fade-right" data-aos-duration="1000">
+                    <a href="../index.html">
+                        <img src="../assets/images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <ul class="nav-links" data-aos="fade-left" data-aos-duration="1000">
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#proficiencies">Proficiencies</a></li>
+                    <li><a href="../index.html#projects">Projects</a></li>
+                    <li><a href="../index.html#other-platforms">Other Platforms</a></li>
+                    <li><a href="../index.html#certifications">Certifications</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                    <li>
+                        <div class="dark-mode-container">
+                            <i class="fas fa-sun"></i>
+                            <div class="theme-switch-wrapper">
+                                <label class="theme-switch" for="checkbox">
+                                    <input type="checkbox" id="checkbox" />
+                                    <div class="slider round"></div>
+                                </label>
+                            </div>
+                            <i class="fas fa-moon"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="header">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../assets/images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="hamburger-menu">
+                    <div class="hamburger-icon" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="menu-links">
+                        <li><a href="../index.html#about" onclick="toggleMenu()">About</a></li>
+                        <li><a href="../index.html#proficiencies" onclick="toggleMenu()">Proficiencies</a></li>
+                        <li><a href="../index.html#projects" onclick="toggleMenu()">Projects</a></li>
+                        <li><a href="../index.html#other-platforms" onclick="toggleMenu()">Other Platforms</a></li>
+                        <li><a href="../index.html#certifications" onclick="toggleMenu()">Certifications</a></li>
+                        <li><a href="../index.html#contact" onclick="toggleMenu()">Contact</a></li>
+                        <li>
+                            <div class="dark-mode-container-mobile">
+                                <i class="fas fa-sun"></i>
+                                <label class="theme-switch" for="checkbox-mobile">
+                                    <input type="checkbox" id="checkbox-mobile" />
+                                    <div class="slider round"></div>
+                                </label>
+                                <i class="fas fa-moon"></i>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="project-container">
+            <!-- Back to projects button -->
+            <a href="../index.html#projects" class="back-link">
+                <i class="fas fa-arrow-left"></i> Back to All Projects
+            </a>
+
+            <!-- Project Header -->
+            <div class="project-header" data-aos="fade-up">
+                <h1 class="project-title">Project Title</h1>
+                <p class="project-description">
+                    A comprehensive description of the project. Explain what it does, why you created it, and what problem it solves. 
+                    This introduction should give visitors a clear understanding of the project's purpose and value.
+                </p>
+                
+                <!-- Technology stack with badges -->
+                <div class="tech-stack">
+                    <span class="tech-badge"><img src="../assets/images/python.png" alt="Python"> Python</span>
+                    <span class="tech-badge"><img src="../assets/images/tensorflow.png" alt="TensorFlow"> TensorFlow</span>
+                    <span class="tech-badge"><img src="../assets/images/flask.png" alt="Flask"> Flask</span>
+                    <span class="tech-badge"><img src="../assets/images/js.png" alt="JavaScript"> JavaScript</span>
+                    <!-- Add more technology badges as needed -->
+                </div>
+                
+                <!-- Project links -->
+                <div class="links-section">
+                    <a href="#" class="project-link" target="_blank">
+                        <i class="fas fa-globe"></i> Live Demo
+                    </a>
+                    <a href="#" class="project-link" target="_blank">
+                        <i class="fab fa-github"></i> Source Code
+                    </a>
+                    <a href="#" class="project-link" target="_blank">
+                        <i class="fas fa-file-alt"></i> Research Paper
+                    </a>
+                </div>
+            </div>
+
+            <!-- Interactive Demo Section -->
+            <section class="demo-section" data-aos="fade-up">
+                <h2 class="demo-heading">Live Demo</h2>
+                <iframe class="demo-frame" src="https://your-project-demo-url.com" title="Project Demo" allowfullscreen></iframe>
+                <div class="demo-instructions">
+                    <p><strong>How to use:</strong> Provide clear instructions on how to interact with the demo above. Explain the inputs required, 
+                    what buttons do, and what results to expect. Make it as simple as possible for users to understand how to test your project.</p>
+                </div>
+            </section>
+
+            <!-- Documentation Section -->
+            <section class="documentation-section" data-aos="fade-up">
+                <h2 class="section-heading">Project Documentation</h2>
+                <div class="documentation-content">
+                    <h3>Overview</h3>
+                    <p>
+                        Provide a detailed overview of your project. Explain the architecture, main components, and how they work together.
+                        This section should give a high-level understanding of your project's structure and functionality.
+                    </p>
+
+                    <h3>Features</h3>
+                    <ul>
+                        <li><strong>Feature 1:</strong> Description of the first key feature.</li>
+                        <li><strong>Feature 2:</strong> Description of the second key feature.</li>
+                        <li><strong>Feature 3:</strong> Description of the third key feature.</li>
+                        <li><strong>Feature 4:</strong> Description of the fourth key feature.</li>
+                    </ul>
+
+                    <h3>Technical Details</h3>
+                    <p>
+                        Explain the technical aspects of your project. Discuss the algorithms, frameworks, and techniques you used.
+                        Include code snippets if relevant:
+                    </p>
+                    <pre><code># Example code snippet
+def predict_outcome(data):
+    model = load_model('model.h5')
+    prediction = model.predict(preprocess(data))
+    return interpret_results(prediction)</code></pre>
+
+                    <h3>Implementation Process</h3>
+                    <p>
+                        Walk through how you implemented the project. Discuss your approach, the steps you took, and any design decisions you made.
+                        This section helps others understand your thought process and methodology.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Challenges and Solutions Section -->
+            <section class="challenges-section" data-aos="fade-up">
+                <h2 class="section-heading">Challenges & Solutions</h2>
+                
+                <div class="challenge-item">
+                    <h3 class="challenge-title">
+                        <i class="fas fa-exclamation-triangle"></i> Challenge 1
+                    </h3>
+                    <p class="challenge-description">
+                        Describe a significant challenge you faced during the development of this project. Explain why it was difficult 
+                        and what made it challenging.
+                    </p>
+                    <div class="solution">
+                        <p class="solution-title">Solution:</p>
+                        <p>
+                            Explain how you overcame this challenge. Describe your approach, any research you did, 
+                            and the specific steps you took to solve the problem.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="challenge-item">
+                    <h3 class="challenge-title">
+                        <i class="fas fa-exclamation-triangle"></i> Challenge 2
+                    </h3>
+                    <p class="challenge-description">
+                        Describe another significant challenge you encountered during development.
+                    </p>
+                    <div class="solution">
+                        <p class="solution-title">Solution:</p>
+                        <p>
+                            Explain how you overcame this second challenge and what you learned from the experience.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Future Improvements Section -->
+            <section class="documentation-section" data-aos="fade-up">
+                <h2 class="section-heading">Future Improvements</h2>
+                <div class="documentation-content">
+                    <p>
+                        Discuss potential future improvements and extensions for your project. What features would you like to add?
+                        How could you enhance the existing functionality? This shows that you're thinking about the long-term evolution of your project.
+                    </p>
+                    <ul>
+                        <li>Future feature or improvement 1</li>
+                        <li>Future feature or improvement 2</li>
+                        <li>Future feature or improvement 3</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Related Projects Section -->
+            <section class="related-projects" data-aos="fade-up">
+                <h2 class="related-heading">Related Projects</h2>
+                <div class="related-cards">
+                    <a href="project2.html" class="related-card">
+                        <img src="../assets/images/project-img1.jpg" alt="Related Project 1" class="related-img">
+                        <div class="related-info">
+                            <h3 class="related-title">Related Project 1</h3>
+                            <p class="related-description">Brief description of a related project that visitors might also be interested in.</p>
+                        </div>
+                    </a>
+                    <a href="project3.html" class="related-card">
+                        <img src="../assets/images/project-img2.jpg" alt="Related Project 2" class="related-img">
+                        <div class="related-info">
+                            <h3 class="related-title">Related Project 2</h3>
+                            <p class="related-description">Brief description of another related project in your portfolio.</p>
+                        </div>
+                    </a>
+                    <a href="project4.html" class="related-card">
+                        <img src="../assets/images/project-img3.jpg" alt="Related Project 3" class="related-img">
+                        <div class="related-info">
+                            <h3 class="related-title">Related Project 3</h3>
+                            <p class="related-description">Brief description of a third related project to showcase your range of work.</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright &#169; 2024 Wajid Javed. All Rights Reserved.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 1000,
+                once: false,
+                mirror: true
+            });
+        });
+    </script>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html> 
